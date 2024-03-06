@@ -1,7 +1,7 @@
 import pandas as pd
 
 # Read the CSV file
-df = pd.read_csv('Meta.csv', index_col=0)
+df = pd.read_csv('Meta-Viet.csv', index_col=0)
 
 # Get 10 strings from the console in the same line, separated by spaces
 pick_inputs = input("Enter 10 champs picked (5 Win, 5 Lose) separated by spaces: ").split()
@@ -47,5 +47,11 @@ df['Ban rate'] = df['Ban'].div(df.loc['Total', 'Ban'])
 # and store the results in a new column "Win rate"
 df['Win rate'] = df['Win'].div(df['Pick'])
 
+# Round the values in the "Ban rate", "Pick rate", and "Win rate" columns to two decimal places
+# and convert them to percentages
+df['Ban rate'] = df['Ban rate'].mul(100).round(2)
+df['Pick rate'] = df['Pick rate'].mul(100).round(2)
+df['Win rate'] = df['Win rate'].mul(100).round(2)
+
 # Write the DataFrame back to the CSV file
-df.to_csv('Meta.csv')
+df.to_csv('Meta-Viet.csv')
