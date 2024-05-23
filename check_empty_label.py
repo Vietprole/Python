@@ -1,11 +1,11 @@
 import os
 import shutil
 
-folder_path = "E:/Downloads/OfficalDataset-fixed/OfficalDataset"
+folder_path_init = "E:/Downloads/Duck Detector.v1i.yolov8"
 
-data_usages = ["/test", "/train", "/val"]
+data_usages = ["/test", "/train", "/valid", "/500"]
 for data_usage in data_usages:
-    folder_path = "E:/Downloads/OfficalDataset-fixed/OfficalDataset" + data_usage + "/labels"
+    folder_path = folder_path_init + data_usage + "/labels"
     label_count = 0
     empty_count = 0
     # Iterate over each file in the folder

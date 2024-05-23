@@ -2,8 +2,10 @@ import csv
 import os
 import cv2
 
-folder_path = 'E:/OneDrive - The University of Technology/chicken_image/kaggle-antoreepjana-animals-detection-images-dataset-1050/train-388/labels'  # Replace with the actual path to your folder
-image_path = 'E:/OneDrive - The University of Technology/chicken_image/kaggle-antoreepjana-animals-detection-images-dataset-1050/train-388'
+# folder_path = 'E:/OneDrive - The University of Technology/chicken_image/kaggle-antoreepjana-animals-detection-images-dataset-1050/train-388/labels'  # Replace with the actual path to your folder
+# image_path = 'E:/OneDrive - The University of Technology/chicken_image/kaggle-antoreepjana-animals-detection-images-dataset-1050/train-388'
+folder_path = "E:/Downloads/Chicken Combs.v3i.yolov7pytorch/train/labels"
+image_path = "E:/Downloads/Chicken Combs.v3i.yolov7pytorch/train/images"
 # https://github.com/ultralytics/yolov5/discussions/7932
 # find center: x = (x2 - x1) / 2, y = (y2 - y1) / 2
 # find ratio of x,y to width, height: x = x / width, y = y / height
