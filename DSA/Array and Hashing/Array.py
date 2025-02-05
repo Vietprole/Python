@@ -37,7 +37,7 @@ else:
 # Sorting an array
 my_array.sort()
 
-# Adding elements to an array
+# Adding element to an array
 my_array.append(6)
 
 # Removing elements from an array
